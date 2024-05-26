@@ -1,0 +1,126 @@
+.theme--light.error--text.v-messages {
+    color: #ff5252 !important;
+}
+
+.login_form {
+    height: 520px;
+    width: 410px;
+    background-color: rgba(255, 255, 255, 0.13);
+    background-color: #f1f1f1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    /* backdrop-filter: blur(10px); */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 25px 25px;
+}
+
+.sub_button {
+    background: linear-gradient(to bottom,
+            #f0c368 0%,
+            #ffd60a 50%,
+            #feb645 100%) !important;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.forget_password_form {
+    width: 500px;
+    background-color: #f1f1f1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 25px 25px;
+}
+
+/*======== button loader css ==========*/
+
+.dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #000;
+    box-shadow: 9999px 0 0 -5px;
+    animation: dot-pulse 1.5s infinite linear;
+    animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #000;
+}
+
+.dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px;
+    animation: dot-pulse-before 1.5s infinite linear;
+    animation-delay: 0s;
+}
+
+.dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px;
+    animation: dot-pulse-after 1.5s infinite linear;
+    animation-delay: 0.5s;
+}
+
+@keyframes dot-pulse-before {
+    0% {
+        box-shadow: 9984px 0 0 -5px;
+    }
+
+    30% {
+        box-shadow: 9984px 0 0 2px;
+    }
+
+    60%,
+    100% {
+        box-shadow: 9984px 0 0 -5px;
+    }
+}
+
+@keyframes dot-pulse {
+    0% {
+        box-shadow: 9999px 0 0 -5px;
+    }
+
+    30% {
+        box-shadow: 9999px 0 0 2px;
+    }
+
+    60%,
+    100% {
+        box-shadow: 9999px 0 0 -5px;
+    }
+}
+
+@keyframes dot-pulse-after {
+    0% {
+        box-shadow: 10014px 0 0 -5px;
+    }
+
+    30% {
+        box-shadow: 10014px 0 0 2px;
+    }
+
+    60%,
+    100% {
+        box-shadow: 10014px 0 0 -5px;
+    }
+}
